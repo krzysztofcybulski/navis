@@ -25,10 +25,10 @@ public class PersistenceConfig {
         this.snapshotsRepository = snapshotsRepository;
     }
 
-//    @Scheduled(fixedDelay = 10000)
-//    public void scheduleSaving() {
-//        Collection<ShipSnapshot> snapshots = cacheSnapshots.getSnapshots();
-//        snapshotsRepository.saveAllAndFlush(snapshots);
-//        logger.info("Saved {} snapshots", snapshots.size());
-//    }
+    @Scheduled(fixedDelay = 10000)
+    public void scheduleSaving() {
+        Collection<ShipSnapshot> snapshots = cacheSnapshots.getSnapshots();
+        snapshotsRepository.saveAllAndFlush(snapshots);
+        logger.info("Saved {} snapshots", snapshots.size());
+    }
 }
