@@ -1,6 +1,9 @@
 # Navis 🚢
 
-Playground for some technologies. App created for contest organized by [bykowski.pl](https://bykowski.pl/wez-udzial-w-konkursie-programistycznym-monitorowanie-jednostek-morskich/).
+SDK for building marine traffic software + example app.
+
+Playground for some technologies. The core is designed using **event sourcing** architecture.
+App created for contest organized by [bykowski.pl](https://bykowski.pl/wez-udzial-w-konkursie-programistycznym-monitorowanie-jednostek-morskich/).
 
 ## How to run?
 
@@ -11,6 +14,10 @@ You can find information about registration [on wiki](https://wiki.barentswatch.
 export BARENTS_WATCH_CLIENT_ID={}
 export BARENTS_WATCH_CLIENT_SECRET={}
 ```
+
+Build an app (requires JDK 17):
+
+> ./gradlew build
 
 And then start Docker:
 
