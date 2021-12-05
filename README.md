@@ -32,10 +32,15 @@ As you can see on screenshot below **navis** provide:
 
 ![ship selected](public/selected.png)
 
+**navis** is meant to be the core of systems based on AIS. It can be used as an framework or a library to build applications that need to access different marine data. Presented app can be used as an example of simple use case that takes advantage of few different things:
+* Read model
+* Live event updates
+* Integrating with AIS provider
+
 ## Backend
 
 * Modularized with **Gradle**
-* Modules in **Kotlin**
+* **Kotlin**
 * **Spring Web** module in Java
 * **Event sourcing** (with in-memory events repository)
 * **Reactive** programming and **websockets** to provide live updates
@@ -57,6 +62,7 @@ As you can see on screenshot below **navis** provide:
 * Show routes on map
 * Format event log
 * Integration/acceptance tests
+* Kibana + Grafana
 
 ## Author
 
