@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        order_inserts: true
+        batch_versioned_data: true
+        jdbc.batch_size: 20
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: org.postgresql.Driver

@@ -1,0 +1,6 @@
+rootProject.name = 'navis'
+include 'barents-watch-provider'
+include 'ships'
+include 'web'
+include 'event-store'
+
